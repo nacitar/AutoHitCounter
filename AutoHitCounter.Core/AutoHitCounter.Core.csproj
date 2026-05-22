@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>12</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\AutoHitCounter\Enums\GameTitle.cs" Link="Enums\GameTitle.cs" />
+    <Compile Include="..\AutoHitCounter\Enums\SplitType.cs" Link="Enums\SplitType.cs" />
+    <Compile Include="..\AutoHitCounter\Enums\State.cs" Link="Enums\State.cs" />
+    <Compile Include="..\AutoHitCounter\Enums\HotkeyActions.cs" Link="Enums\HotkeyActions.cs" />
+
+    <Compile Include="..\AutoHitCounter\Models\EventLogEntry.cs" Link="Models\EventLogEntry.cs" />
+    <Compile Include="..\AutoHitCounter\Models\Game.cs" Link="Models\Game.cs" />
+    <Compile Include="..\AutoHitCounter\Models\Profile.cs" Link="Models\Profile.cs" />
+    <Compile Include="..\AutoHitCounter\Models\RunSnapshot.cs" Link="Models\RunSnapshot.cs" />
+    <Compile Include="..\AutoHitCounter\Models\RunState.cs" Link="Models\RunState.cs" />
+    <Compile Include="..\AutoHitCounter\Models\SplitEntry.cs" Link="Models\SplitEntry.cs" />
+
+    <Compile Include="..\AutoHitCounter\Interfaces\ICustomGameService.cs" Link="Interfaces\ICustomGameService.cs" />
+    <Compile Include="..\AutoHitCounter\Interfaces\ICustomGamesStore.cs" Link="Interfaces\ICustomGamesStore.cs" />
+    <Compile Include="..\AutoHitCounter\Interfaces\IGameModule.cs" Link="Interfaces\IGameModule.cs" />
+    <Compile Include="..\AutoHitCounter\Interfaces\IGameModuleFactory.cs" Link="Interfaces\IGameModuleFactory.cs" />
+    <Compile Include="..\AutoHitCounter\Interfaces\IGameSessionOrchestrator.cs" Link="Interfaces\IGameSessionOrchestrator.cs" />
+    <Compile Include="..\AutoHitCounter\Interfaces\IHitRulesProvider.cs" Link="Interfaces\IHitRulesProvider.cs" />
+    <Compile Include="..\AutoHitCounter\Interfaces\IHotkeyManager.cs" Link="Interfaces\IHotkeyManager.cs" />
+    <Compile Include="..\AutoHitCounter\Interfaces\IMemoryService.cs" Link="Interfaces\IMemoryService.cs" />
+    <Compile Include="..\AutoHitCounter\Interfaces\IProfileService.cs" Link="Interfaces\IProfileService.cs" />
+    <Compile Include="..\AutoHitCounter\Interfaces\IRunStateService.cs" Link="Interfaces\IRunStateService.cs" />
+    <Compile Include="..\AutoHitCounter\Interfaces\ISplitNavigationService.cs" Link="Interfaces\ISplitNavigationService.cs" />
+    <Compile Include="..\AutoHitCounter\Interfaces\IStateService.cs" Link="Interfaces\IStateService.cs" />
+    <Compile Include="..\AutoHitCounter\Interfaces\IVersionedGameModule.cs" Link="Interfaces\IVersionedGameModule.cs" />
+
+    <Compile Include="..\AutoHitCounter\Services\CustomGameService.cs" Link="Services\CustomGameService.cs" />
+    <Compile Include="..\AutoHitCounter\Services\RunStateService.cs" Link="Services\RunStateService.cs" />
+    <Compile Include="..\AutoHitCounter\Services\SplitNavigationService.cs" Link="Services\SplitNavigationService.cs" />
+    <Compile Include="..\AutoHitCounter\Services\StateService.cs" Link="Services\StateService.cs" />
+    <Compile Include="Services\GameSessionOrchestrator.cs" />
+
+    <Compile Include="ViewModels\SplitViewModel.cs" />
+  </ItemGroup>
+</Project>
